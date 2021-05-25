@@ -15,8 +15,9 @@
     <ul>
     <?php
     while($row = pg_fetch_array($result,NULL, PGSQL_ASSOC)) { 
+        print_r($row);
     ?>
-    <li><?=$row['username']?></li>
+    <li><?php //echo $row['username'];?></li>
      
  
    <?php  
