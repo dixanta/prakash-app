@@ -9,12 +9,12 @@
       echo "Error : Unable to open database\n";
    } else {
 
-      $sql="select * from tbl_users";  
+    $sql="select * from tbl_users";  
     $result = pg_query($db, $sql); 
     ?>
     <ul>
     <?php
-    while($row = pg_fetch_array($result,NULL, PGSQL_ASSOC)) { 
+    while($row = pg_fetch_array($result)) { 
         print_r($row);
     ?>
     <li><?php //echo $row['username'];?></li>
