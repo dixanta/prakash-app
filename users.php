@@ -14,7 +14,7 @@
     ?>
     <ul>
     <?php
-    while($row = pg_fetch_array($ret,NULL, PGSQL_ASSOC)) { 
+    while($row = pg_fetch_array($result,NULL, PGSQL_ASSOC)) { 
     ?>
     <li><?=$row['username']?></li>
      
